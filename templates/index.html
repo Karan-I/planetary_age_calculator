@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planetary Age Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌌 Planetary Age Calculator 🌌</h1>
+    <form method="post">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <input type="number" name="age" placeholder="Enter your age" required>
+      <button type="submit">Calculate</button>
+    </form>
+
+    {% if name %}
+      <h2>Hello {{ name }}!</h2>
+      <p>You were born in {{ birth_year }}.</p>
+      <h3>Your Age on Other Planets:</h3>
+      <ul>
+        {% for planet, value in planetary_ages.items() %}
+          <li><strong>{{ planet }}</strong>: {{ value }} years</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</body>
+</html>
