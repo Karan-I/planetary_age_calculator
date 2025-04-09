@@ -24,7 +24,8 @@ This fun web app calculates your age across different planets and gives you a li
 
 ## 🖼 Preview
 
-! Planetary Age Calculator Screenshot(![Screenshot (994)](https://github.com/user-attachments/assets/30b271cf-0461-4e1c-a127-13ca874fe89a)
+! Planetary Age Calculator Screenshot(![Screenshot (994)]![Screenshot (1016)](https://github.com/user-attachments/assets/ca156e78-f679-422f-a673-e7b29aa1605b)
+
 )
 
 ---
